@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma avanzada con accesibilidad total">
-    <title>Eres el amor de mi vida</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Especial</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-       
-        
+  <header>
+    <h1>Nuestra Historia</h1>
+    <nav>
+      <a href="#seccion1">Inicio</a>
+      <a href="#seccion2">Fotos</a>
+      <a href="#seccion3">Frases</a>
+    </nav>
+  </header>
 
+  <section id="seccion1" class="pagina fondo-rosado">
+    <h2>Feliz 7 Meses!</h2>
+    <p> Esta será nuestra página web donde mes a mes iré actualizando y siempre estará activa como nuestro amor.
+    </p>
 
-    </header>
+    <p>Aquí estarán almacenadas nuestras fotos y videos que vayamos tomando a lo largo de toda nuestra vida
+        y será un bonito recuerdo que podremos tener siempre presente y ver en cada momento.
+    </p>
 
-    <main>
-     
+    <p>Feliz 7 meses mi amor y los que faltan por venir.</p>
 
+    <P> TE AMOOOOOO! ❤️</P>
 
-    </main>
+    <div class="videos">
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+      </video>
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+      </video>
+    </div>
+  </section>
 
-    <footer>
-        <p data-translate="footer-mensaje"> &copy; 2025 Plataforma Accesible. Todos los derechos reservados.</p>
-    </footer>
+  <section id="seccion2" class="pagina fondo-morado">
+    <h2>Nuestras Fotos</h2>
+    <div class="fotos">
+      <img src="foto1.jpg" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="seccion3" class="pagina fondo-turquesa">
+    <h2>Frases Bonitas</h2>
+    <div id="frase-container">
+      <p id="frase">Haz clic aquí para ver frases bonitas.</p>
+    </div>
+    <audio id="musica-fondo" autoplay loop>
+      <source src="musica.mp3" type="audio/mp3">
+      Tu navegador no soporta audio.
+    </audio>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
