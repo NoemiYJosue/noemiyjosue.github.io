@@ -1,18 +1,53 @@
-const frases = [
+const mensajes = [
     "Eres mi sol en días nublados.",
     "Contigo, todo es mejor.",
     "No necesito nada más, solo a ti.",
     "Eres mi persona favorita.",
-    "Te amo más cada día."
+    "Te amo más cada día.",
+    'Eres la razón por la que sonrío cada día. 💖',
+    'Te amo más de lo que las palabras pueden expresar. 🌹',
+    'Eres mi lugar favorito en el mundo. 🏡',
+    'Gracias por llenar mi vida de felicidad. 🌟',
+    'No hay nada más hermoso que tu sonrisa. 😊',
+    'Eres el mejor regalo que la vida me ha dado. 🎁',
+    'No importa dónde esté, siempre mi corazón estará contigo. 💖',
+    'Eres mi primer pensamiento al despertar y el último antes de dormir. 🌙',
+    'Contigo, cada día es una nueva aventura llena de felicidad. 🌟',
+    'Eres la persona que llena mi vida de magia y alegría. ✨',
+    'Si pudiera darte algo, te daría el poder de verte a ti misma como yo te veo. 💕',
+    'No necesito un paraíso, porque mi paraíso eres tú. 🌴',
+    'Gracias por ser mi compañera de vida y lo mejor que tengo. 🙏',
+    'Tu sonrisa es mi luz en los días más oscuros. 🌞',
+    'A tu lado, cada momento se convierte en un recuerdo inolvidable. 🥰',
+    'Solo quiero recordarte lo increíble y especial que eres para mí. 🌹',
+    'Gracias por ser mi inspiración diaria. 🌼',
+    'Cada detalle tuyo me recuerda lo afortunado que soy de tenerte. 🎁',
+    'Gracias por hacerme la persona más feliz del mundo. 🌎',
+    'Eres mi razón para seguir adelante, incluso en los días difíciles. 💪',
+    'Hoy es un buen día para decirte lo especial que eres para mí. 🥰',
+    'No importa cuánto pase el tiempo, siempre serás mi elección. ⏳',
+
   ];
   
-  const fraseContainer = document.getElementById("frase-container");
-  const fraseTexto = document.getElementById("frase");
-  
-  fraseContainer.addEventListener("click", () => {
-    const nuevaFrase = frases[Math.floor(Math.random() * frases.length)];
-    fraseTexto.textContent = nuevaFrase;
-  });
+ 
+// Seleccionar el elemento del mensaje secreto
+const mensajeSecreto = document.getElementById("mensajeSecreto");
+
+// Asegurarse de que el elemento existe
+if (mensajeSecreto) {
+    mensajeSecreto.addEventListener("click", () => {
+        // Seleccionar un mensaje aleatorio
+        const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+        
+        // Cambiar el contenido del mensaje
+        mensajeSecreto.textContent = mensajeAleatorio;
+
+        // Aplicar la clase 'revelado'
+        mensajeSecreto.classList.add("revelado");
+    });
+} else {
+    console.error("Elemento con ID 'mensajeSecreto' no encontrado.");
+}
 
 
 // Galería de imágenes
