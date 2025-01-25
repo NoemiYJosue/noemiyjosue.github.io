@@ -30,24 +30,17 @@ const mensajes = [
   ];
   
  
-// Seleccionar el elemento del mensaje secreto
-const mensajeSecreto = document.getElementById("mensajeSecreto");
+  const mensajeSecreto = document.getElementById("mensajeSecreto");
 
-// Asegurarse de que el elemento existe
-if (mensajeSecreto) {
-    mensajeSecreto.addEventListener("click", () => {
-        // Seleccionar un mensaje aleatorio
-        const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
-        
-        // Cambiar el contenido del mensaje
-        mensajeSecreto.textContent = mensajeAleatorio;
-
-        // Aplicar la clase 'revelado'
-        mensajeSecreto.classList.add("revelado");
-    });
-} else {
-    console.error("Elemento con ID 'mensajeSecreto' no encontrado.");
-}
+  mensajeSecreto.addEventListener("click", () => {
+    mensajeSecreto.classList.add("revelado");
+  
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * mensajes.length);
+      mensajeSecreto.textContent = mensajes[randomIndex];
+      mensajeSecreto.classList.remove("revelado");
+    }, 300); // Cambia después de medio segundo
+  });
 
 
 // Galería de imágenes
