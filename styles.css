@@ -72,11 +72,17 @@ body {
   background-color: #3700b3;
 }
 
+/* Videos, galería de videos */
+
 
   .videos video, .fotos img {
     max-width: 100%;
     height: auto;
     margin: 10px;
+  }
+  
+  .galeria-videos {
+    margin-top: 50px; /* Mueve el contenedor de video hacia abajo */
   }
   
   #frase-container {
