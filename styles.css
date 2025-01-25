@@ -183,59 +183,42 @@ body {
   }
 
 
-/* Fondo general de la sección 3 */
-#seccion3 {
-  background-color: #40e0d0; /* Fondo turquesa */
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  display: flex;
-  flex-direction: column; /* Alinea elementos en columna */
-  justify-content: flex-start; /* Mueve el contenido hacia abajo */
-  align-items: center; /* Centra horizontalmente */
-  padding: 20px; /* Espaciado */
-  margin: 0;
-  box-sizing: border-box; /* Asegura que padding no desborde */
-}
+  
 
 
 
-
-/* Contenedor del mensaje */
-.mensaje-container {
+  .mensaje-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 400px;
+  height: 100%;
+  padding: 20px;
   margin-top: 150px; /* Mueve el contenedor de texto 50px hacia abajo */
+  background-color: transparent; /* Elimina el fondo rosa claro */
 }
 
-/* Cuadro del mensaje */
 .mensaje-secreto {
-  background-color: #ffe6f2; /* Fondo rosado */
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 18px;
-  color: #333; /* Texto oscuro */
-  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-  cursor: pointer;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
-  border: 2px solid #ffffff; /* Bordes blancos */
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #333;
+  transition: transform 0.5s, opacity 0.5s;
+  cursor: pointer;
 }
 
-/* Efecto al revelar el mensaje */
 .mensaje-secreto.revelado {
-  transform: scale(1.1); /* Aumenta ligeramente de tamaño */
+  transform: scale(1.05);
   opacity: 1;
-  color: #d34a78; /* Texto vibrante */
-  background-color: #fddde6; /* Fondo ligeramente diferente al revelar */
-  font-weight: bold;
+  color: #d34a78; /* Color de texto cuando se revela */
 }
 
 .mensaje-secreto:not(.revelado) {
   transform: scale(0.95);
   opacity: 0.8;
-  color: #333;
 }
