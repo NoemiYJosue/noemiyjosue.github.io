@@ -212,8 +212,9 @@ body {
   width: 90%;
   max-width: 400px;
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  color: #333;
+  font-size: 22px; /* Aumenta el tamaño del texto */
+  color: #d34a78;
+  font-weight: bold; /* Hace el texto en negrita */
   transition: transform 0.5s, opacity 0.5s;
   cursor: pointer;
 }
@@ -222,9 +223,11 @@ body {
   transform: scale(1.05);
   opacity: 1;
   color: #d34a78; /* Color de texto cuando se revela */
+  font-size: 20px;
 }
 
 .mensaje-secreto:not(.revelado) {
   transform: scale(0.95);
   opacity: 0.8;
+  color: #d34a78;
 }
