@@ -9,15 +9,15 @@
 <body>
   <header>
     <h1>Nuestra Historia</h1>
-    <nav>
-      <a href="#seccion1">Inicio</a>
-      <a href="#seccion2">Fotos</a>
-      <a href="#seccion3">Frases</a>
+    <nav class="menu-navegacion">
+      <button class="btn-navegacion" data-seccion="seccion1">Amor y Videos</button>
+      <button class="btn-navegacion" data-seccion="seccion2">Fotos</button>
+      <button class="btn-navegacion" data-seccion="seccion3">Frases Bonitas</button>
     </nav>
   </header>
 
   <section id="seccion1" class="pagina fondo-rosado">
-    <h2>Feliz 7 Meses!</h2>
+    <h2>¡Felices 7 Meses!</h2>
     <p> Esta será nuestra página web donde mes a mes iré actualizando y siempre estará activa como nuestro amor.
     </p>
 
@@ -29,16 +29,26 @@
 
     <P> TE AMOOOOOO! ❤️</P>
 
-    <div class="videos">
-      <video controls>
-        <source src="assets/videos/1.mp4" type="video/mp4">
-        Tu navegador no soporta videos.
-      </video>
-      <video controls>
-        <source src="assets/videos/2.mp4" type="video/mp4">
-        Tu navegador no soporta videos.
-      </video>
-    </div>
+    <!-- Galería de videos -->
+
+  <div class="galeria-videos">
+    <video class="miniatura-video" src="assets/videos/1.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/2.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/3.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/4.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/5.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/6.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/7.mp4" muted></video>
+    <video class="miniatura-video" src="assets/videos/8.mp4" muted></video>
+   
+
+  </div>
+
+  <!-- Modal para videos -->
+  <div id="modal-video" class="modal">
+    <span id="cerrar-video" class="cerrar">&times;</span>
+    <video id="video-modal" class="modal-contenido" controls></video>
+  </div>
   </section>
 
   <section id="seccion2" class="pagina fondo-morado">
@@ -60,10 +70,50 @@
       <img class="miniatura" src="assets/fotos/14.jpg" >
       <img class="miniatura" src="assets/fotos/15.jpg" >
       <img class="miniatura" src="assets/fotos/16.jpg" >
-      <img class="miniatura" src="assets/fotos/17.jpg" >
-      <img class="miniatura" src="assets/fotos/18.jpg" >
-      
-    
+
+     
+      <img class="miniatura" src="assets/fotos/19.jpg" >
+      <img class="miniatura" src="assets/fotos/20.jpg" >
+      <img class="miniatura" src="assets/fotos/21.jpg" >
+
+      <img class="miniatura" src="assets/fotos/23.jpg" >
+      <img class="miniatura" src="assets/fotos/24.jpg" >
+      <img class="miniatura" src="assets/fotos/25.jpg" >
+      <img class="miniatura" src="assets/fotos/26.jpg" >
+      <img class="miniatura" src="assets/fotos/27.jpg" >
+      <img class="miniatura" src="assets/fotos/28.jpg" >
+      <img class="miniatura" src="assets/fotos/29.jpg" >
+      <img class="miniatura" src="assets/fotos/30.jpg" >
+      <img class="miniatura" src="assets/fotos/31.jpg" >
+      <img class="miniatura" src="assets/fotos/32.jpg" >
+      <img class="miniatura" src="assets/fotos/33.jpg" >
+      <img class="miniatura" src="assets/fotos/34.jpg" >
+      <img class="miniatura" src="assets/fotos/35.jpg" >
+      <img class="miniatura" src="assets/fotos/36.jpg" >
+      <img class="miniatura" src="assets/fotos/37.jpg" >
+      <img class="miniatura" src="assets/fotos/38.jpg" >
+      <img class="miniatura" src="assets/fotos/39.jpg" >
+      <img class="miniatura" src="assets/fotos/40.jpg" >
+      <img class="miniatura" src="assets/fotos/41.jpg" >
+      <img class="miniatura" src="assets/fotos/42.jpg" >
+      <img class="miniatura" src="assets/fotos/43.jpg" >
+      <img class="miniatura" src="assets/fotos/44.jpg" >
+      <img class="miniatura" src="assets/fotos/45.jpg" >
+      <img class="miniatura" src="assets/fotos/46.jpg" >
+      <img class="miniatura" src="assets/fotos/47.jpg" >
+      <img class="miniatura" src="assets/fotos/48.jpg" >
+      <img class="miniatura" src="assets/fotos/49.jpg" >
+      <img class="miniatura" src="assets/fotos/50.jpg" >
+      <img class="miniatura" src="assets/fotos/51.jpg" >
+      <img class="miniatura" src="assets/fotos/52.jpg" >
+      <img class="miniatura" src="assets/fotos/53.jpg" >
+      <img class="miniatura" src="assets/fotos/54.jpg" >
+      <img class="miniatura" src="assets/fotos/55.jpg" >
+      <img class="miniatura" src="assets/fotos/56.jpg" >
+      <img class="miniatura" src="assets/fotos/57.jpg" >
+      <img class="miniatura" src="assets/fotos/58.jpg" >
+      <img class="miniatura" src="assets/fotos/59.jpg" >
+
 
 
     </div>
@@ -72,6 +122,8 @@
       <span id="cerrar" class="cerrar">&times;</span>
       <img id="imagen-modal" class="modal-contenido" alt="Vista ampliada">
       <p id="caption" class="caption"></p>
+      <span id="anterior" class="navegacion">&#10094;</span>
+      <span id="siguiente" class="navegacion">&#10095;</span>
     </div>
     
 
