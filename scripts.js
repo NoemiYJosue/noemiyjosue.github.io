@@ -144,3 +144,8 @@ document.getElementById("btn-no").addEventListener("click", function() {
       document.getElementById("imagenes-amor").style.display = "block";
   }
 });
+
+document.getElementById("btn-si").addEventListener("click", function() {
+  document.getElementById("seccion4").style.display = "none"; // Ocultar la sección de la pregunta
+  document.getElementById("pantalla-celebracion").style.display = "flex"; // Mostrar la pantalla de celebración
+});

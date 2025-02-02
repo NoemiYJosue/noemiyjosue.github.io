@@ -237,7 +237,7 @@ body {
 /* Pagina 4 */
 
 #seccion4 {
-  background-color: rgb(170, 83, 83); /* Fondo rojo */
+  background-color: pink; /* Fondo rojo */
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -250,7 +250,7 @@ body {
 }
 
 .boton-amor {
-  background-color: pink;
+  background-color: red;
   color: white;
   padding: 15px 25px;
   font-size: 18px;
@@ -265,7 +265,7 @@ body {
 }
 
 .boton-no {
-  background-color: red;
+  background-color: pink;
   color: white;
   padding: 15px 25px;
   font-size: 18px;
@@ -275,15 +275,30 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.imagenes-ocultas {
+#pantalla-celebracion {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+  color: white;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagenes-celebracion {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.imagenes-ocultas img {
+.imagenes-celebracion img {
   width: 150px;
   height: auto;
-  margin: 10px;
   border-radius: 10px;
 }
