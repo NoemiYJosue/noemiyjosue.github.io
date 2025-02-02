@@ -36,6 +36,12 @@ body {
   .fondo-turquesa {
     background-color: #40e0d0;
   }
+
+  @media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column; /* Hacer que los elementos del menú se alineen verticalmente en pantallas pequeñas */
+    }
+  }
   
 /* Ocultar secciones por defecto */
 .pagina {
