@@ -231,3 +231,59 @@ body {
   opacity: 0.8;
   color: #d34a78;
 }
+
+
+
+/* Pagina 4 */
+
+#seccion4 {
+  background-color: rgb(170, 83, 83); /* Fondo rojo */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.contenedor-invitacion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-amor {
+  background-color: pink;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.boton-amor:hover {
+  transform: scale(1.1);
+}
+
+.boton-no {
+  background-color: red;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.imagenes-ocultas {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagenes-ocultas img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}

@@ -131,3 +131,16 @@ botonesNavegacion.forEach((boton) => {
     seccionActiva.classList.add("activa");
   });
 });
+
+
+
+document.getElementById("btn-no").addEventListener("click", function() {
+  let btnNo = this;
+  let currentSize = parseFloat(window.getComputedStyle(btnNo).fontSize);
+  if (currentSize > 5) {
+      btnNo.style.fontSize = (currentSize - 2) + "px";
+      btnNo.style.padding = (parseFloat(btnNo.style.padding) - 2) + "px";
+  } else {
+      document.getElementById("imagenes-amor").style.display = "block";
+  }
+});
