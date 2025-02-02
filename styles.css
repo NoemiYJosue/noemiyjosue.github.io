@@ -237,12 +237,13 @@ body {
 /* Pagina 4 */
 
 #seccion4 {
-  background-color: pink; /* Fondo rojo */
+  background-color: pink; /* Fondo rosa */
   color: white;
   text-align: center;
   padding: 50px 20px;
   min-height: 100vh;
 }
+
 
 .contenedor-invitacion {
   text-align: center;
